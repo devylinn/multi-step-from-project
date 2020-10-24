@@ -1,0 +1,642 @@
+/* Font-face family */
+
+@font-face {
+    font-family: 'Cabin';
+    src: url('/fonts/Cabin/Cabin-Regular.eot');
+    src: url('/fonts/Cabin/Cabin-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Cabin/Cabin-Regular.woff2') format('woff2'),
+        url('/fonts/Cabin/Cabin-Regular.woff') format('woff'),
+        url('/fonts/Cabin/Cabin-Regular.ttf') format('truetype'),
+        url('/fonts/Cabin/Cabin-Regular.svg#Cabin-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cabin';
+    src: url('/fonts/Cabin/Cabin-Bold.eot');
+    src: url('/fonts/Cabin/Cabin-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Cabin/Cabin-Bold.woff2') format('woff2'),
+        url('/fonts/Cabin/Cabin-Bold.woff') format('woff'),
+        url('/fonts/Cabin/Cabin-Bold.ttf') format('truetype'),
+        url('/fonts/Cabin/Cabin-Bold.svg#Cabin-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato/Lato-Bold.eot');
+    src: url('/fonts/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Lato/Lato-Bold.woff2') format('woff2'),
+        url('/fonts/Lato/Lato-Bold.woff') format('woff'),
+        url('/fonts/Lato/Lato-Bold.ttf') format('truetype'),
+        url('/fonts/Lato/Lato-Bold.svg#Lato-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/Lato/Lato-Regular.eot');
+    src: url('/fonts/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Lato/Lato-Regular.woff2') format('woff2'),
+        url('/fonts/Lato/Lato-Regular.woff') format('woff'),
+        url('/fonts/Lato/Lato-Regular.ttf') format('truetype'),
+        url('/fonts/Lato/Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* End Font-face family */
+
+/* Text sizes*/
+h1{
+    font-family: 'Cabin';
+    font-size: 72px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Cabin';
+    font-size: 60px;
+    color: #494947;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h4{
+    font-family: 'Cabin';
+    font-size: 24px;
+    color: #fff;
+    line-height: 36px;
+}
+
+h5{
+    font-family: 'Lato';
+    font-size: 18px;
+    color: #464646;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Cabin';
+    font-size: 18px;
+    color: #06b995;
+    font-weight: bold;
+    margin: 0;
+}
+/* Text Font sizes */
+
+/* Top section & Info section */
+.logo-wrapper a {
+    font-size: 32px;
+    font-family: 'Cabin';
+    text-decoration: none;
+    color: #494947;
+    font-weight: bold;
+}
+
+.top-section{
+    background-image: linear-gradient(rgba(32, 31, 86, 0.5), rgba(32, 31, 86, 0.5)),  url('/images/exemple-picture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 0px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-content{
+    max-width: 1020px;
+    margin: 0 auto;
+    background-color: rgb(23 21 21 / 50%);
+    padding: 50px 130px;
+}
+
+.image-star{
+    background: #ffffff;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.star-art{
+    width: 100%;
+    height: 2px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1570px;
+    margin: 0 auto;
+}
+
+.star-art::before {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    content: '';
+    display: block;
+    background: #06b995;
+    z-index: -1;
+}
+
+.star-art::after{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 2px;
+    content: '';
+    display: block;
+    background: #06b995;
+    z-index: -1;
+}
+
+.section-info-text{
+    max-width: 1190px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.form-section .separator{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 45px 0px;;
+}
+
+.form-section .separator h5{
+    padding: 0px 30px;
+    background-color: #ffffff ;
+    margin: 0px !important;
+    display: inline-block;
+    margin-left: 75px!important;
+    position: relative;
+    z-index: 1;
+}
+
+.form-section .separator::after{
+    content: "";
+    height: 2px;
+    background: #464646;
+    position: absolute;
+    top: 50%;
+    display: block;
+    left: 0;
+    right: 0;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #06b995;
+    border-color: #06b995;
+    padding: 11px 65px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-weight: bold;
+    border-radius: 0;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #06b995;
+    border-color: #06b995;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #16997a;
+    border-color: #16997a;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #16997a;
+    border-color: #16997a;
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #06b995;
+    border-color: #06b995;
+}
+
+.political-party-text{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.political-party-text h5{
+    text-transform: none;
+    color: #494947;
+}
+
+.form{
+    max-width: 1190px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.residential-address-information .form-group{
+    margin-bottom: 30px;
+}
+
+.residential-address-information .checkbox-wrapper{
+    margin-bottom: 0;
+}
+
+.form-group{
+    margin-bottom: 0px;
+}
+
+.next-button, .previous-button{
+    padding-top: 50px;
+    display: inline-block;
+}
+
+.previous-button{
+    margin-right: 20px;
+}
+
+.form-section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.form-control{
+    border: 2px solid #494947;
+    background: transparent;
+    border-radius: 0;
+    height: 65px;
+    padding: 18px 50px;
+}
+
+.form-control:focus{
+    border-color: #494947;
+    box-shadow: none;
+}
+
+/* Radio button*/
+#choose-radio .radio-check{
+    border-radius: 0%;
+}
+#choose-radio .radio-parent{
+    padding-bottom: 30px;
+}
+
+.radio-parent{
+    display: flex;
+    align-items: center;
+}
+
+#choose-radio .radio-wrapper .radio-check:after{
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 8px;
+    height: 14px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: auto;
+    border-radius: 0%; 
+    background: none;
+}
+
+.radio-wrapper {
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    color: #494947;
+    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .radio-wrapper:not(:last-child) {
+    margin-right: 60px;
+  }
+  .radio-wrapper ~ .radio-wrapper {
+    margin-left: 15px;
+  }
+  .radio-wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .radio-check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #494947;
+    border-radius: 50%;
+  }
+  .radio-wrapper:hover input ~ .radio-check {
+    background-color: #06b995;
+    border: 2px solid #06b995;
+  }
+  .radio-wrapper input:checked ~ .radio-check {
+    background-color: #06b995;
+    border: 2px solid #06b995;
+  }
+  .radio-check:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .radio-wrapper input:checked ~ .radio-check:after {
+    display: block;
+  }
+  .radio-wrapper .radio-check:after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;;
+  }
+/* End Radio button */
+
+/* Custom checkbox */
+.checkbox-wrapper {
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    cursor: pointer;
+    color: #494947;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-family: 'Lato';
+    font-weight: bold;
+    margin-top: 0;
+    padding-top: 0;
+}
+.checkbox-wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #494947;
+}
+.legal-signature .checkmark{
+    top: 5px;
+}
+.checkbox-wrapper:hover input ~ .checkmark {
+    background-color: #06b995;
+    border: 2px solid #06b995;
+}
+.checkbox-wrapper input:checked ~ .checkmark {
+    background-color: #06b995;
+    border: 2px solid #06b995;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox-wrapper input:checked ~ .checkmark:after {
+    display: block;
+}
+.checkbox-wrapper .checkmark:after {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 8px;
+    height: 14px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: auto;
+}
+/* End Custom Checkbox */
+
+/* Footer */
+
+.footer{
+    background: #003D5B;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-copyright p{
+    margin-bottom: 0;
+    background: #003D5B;
+    display: inline-block;
+}
+
+/* End footer */
+
+
+.steps-bar{
+    padding-top: 140px;
+    position: relative;
+}
+.inner-bar{
+    display: inline-block;
+    position: relative;
+    padding: 0 5%;
+}
+.inner-bar::after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #494947;
+    top: 50%;
+    left: -50%;
+    z-index: -1;
+}
+.inner-bar:first-child::after{
+    content: none;
+}
+.circle{
+    width:50px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 2px solid #494947;
+    border-radius: 50%;
+}
+.circle::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #494947;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -10px 0px 0px -10px;
+}
+
+.circle span{
+    position: absolute;
+    top: -50px;
+    right: 0;
+    left: 0;
+    white-space: nowrap;
+    font-size: 20px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.primary-text{
+    padding-top: 50px;
+}
+
+.secondary-text{
+    color: #494947;
+    padding-top: 30px;
+}
+
+.hidden-special{
+    display: none;
+}
+
+.hidden-fieldset{
+    display: none;
+}
+
+.inner-bar.active-circle .circle::after{
+    background-color: #06b995;
+}
+
+
+@media (max-width: 1023px){
+    .circle span{
+        font-size: 18px;
+        white-space: normal;
+    }
+
+    .radio-wrapper ~ .radio-wrapper {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 909px){
+    .circle{
+        margin-top: 20px;
+    }
+
+    .circle::after{
+        margin: 0px 0px 0px -10px;
+    }
+
+    .inner-bar::after{
+        top: calc(50% + 10px);
+    }
+}
+
+
+@media (max-width: 767px){
+    .form-group{
+        margin-bottom: 30px;
+    }
+    .section-content{
+        padding: 50px 50px;
+    }
+
+    .next-button, #first-button{
+        width: 100%;
+    }
+
+    .political-party-text h5{
+        margin-bottom: 20px;
+    }
+
+    .previous-button, #previous-button{
+        width: 100%;
+    }
+
+    #finish-button{
+        width: 100%;
+    }
+
+    #second-fieldset .next-button{
+        padding-top: 25px;
+    }
+
+    .form-section .separator h5{
+        padding: 0 10px;
+        font-size: 15px;
+        margin-left: 30px !important;
+    }
+
+    .image-star {
+        background: #ffffff;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .form {
+        padding-left: 20px;
+        padding-right: 20px;
+    
+    }
+}
+
+@media (max-width: 479px){
+    .radio-parent{
+        flex-direction: column;
+        align-items: unset;
+    }
+    .circle span{
+        font-size: 16px;
+    }
+    .special-option{
+        flex-direction: column;
+        align-items: unset;
+    }
+}
+
+.complete-inputs-above:before {
+    content: 'Check fields above for errors.';
+    color: #06b995;
+    font-weight: 700;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.input-not-completed input {
+    border-color: #06b995;
+}
+.input-not-completed:after {
+    content: 'Please complete this field.';
+    color: #06b995;
+    font-weight: 700;
+}

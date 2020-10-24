@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Multi Step Form</title>
+  </head>
+
+  <body>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="logo-wrapper" style="padding:20px">
+              <a href="#">
+                MULTI STEP FORM
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="top-section">
+        <div class="section-content text-center">
+          <div class="col-md-12">
+            <h1>For Learning Purposes</h1>
+            <h4>This is a Multi-Step Form with a progress bar made with HTML, CSS, JS and a bit of PHP.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="formular-progress-bar">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="star-art">
+                <div class="image-star">
+                  <img src="images/star.svg" alt="" width="130" height="50" >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 text-center">
+                <div class="steps-bar">
+                  <div class="inner-bar active-circle">
+                    <div class="circle">
+                      <span>Form I</sppan>
+                    </div>
+                  </div>
+                  <div class="inner-bar">
+                    <div class="circle">
+                      <span>Form II</span>
+                    </div>
+                  </div>
+                  <div class="inner-bar">
+                    <div class="circle">
+                      <span>Finish</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid success-container">
+
+      </div>
+      <form id="all-fields-form" class="form" enctype="multipart/form-data">
+        <fieldset id="first-fieldset">
+          <div class="separator">
+            <h5>Personal Info</h5>
+          </div>
+          <div class="row"> 
+            <div class="col-md-4">
+              <div class="form-group">
+                <input class="form-control" type="text" name="fname" placeholder="First Name">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <input class="form-control" type="text" name="lname" placeholder="Last Name">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <input class="form-control" id="birthday_datepicker" type="text" name="birthday" placeholder="Date of Birth" inputmode="text">
+              </div>
+            </div>
+          </div>
+
+          <div class="separator">
+            <h5>Contact Info</h5>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input class="form-control" type="tel" name="phone-number" placeholder="Phone number">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="Email">
+              </div>
+            </div>
+          </div>
+          <div class="formular-controls">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <div class="form-group">
+                  <div class="next-button">
+                    <button id="first-button" type="button" class="btn btn-primary">Next</button>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      
+        <fieldset id="second-fieldset" class="hidden-fieldset">
+          <div class="form-fields-one">
+            <div class="separator">
+              <h5>Choose ONE - Write Something</h5>
+            </div>
+            <div class="row"> 
+              <div class="col-md-12">
+                <div id="choose-radio" class="form-check-inline">
+                  <div class="radio-parent">
+                    <label class="radio-wrapper">Option 1
+                        <input id="id-radio-one" type="radio" value="radio-one" name="input-radio" checked>
+                        <span class="radio-check"></span>
+                    </label>
+                    <label class="radio-wrapper">Option 2
+                        <input id="id-radio-two" type="radio" value="radio-two" name="input-radio">
+                        <span class="radio-check"></span>
+                    </label>
+                  </div>  
+                </div>
+                <div id="radio-one" class="form-group">
+                  <input class="form-control" type="text" name="choose-one" placeholder="Choose This">
+                </div>
+              </div>
+            </div>
+            <div id="radio-two" class="row hidden-special">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input class="form-control" type="text" name="choose-two" placeholder="Or This">
+                </div>
+              </div>
+             </div>  
+          </div>
+
+          <div class="form-fields-two">
+            <div class="separator">
+              <h5>Address Info</h5>
+            </div>
+           
+            <div class="residential-address-information">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="home-street-address" placeholder="Home Street Address">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="city" placeholder="City">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="zip" placeholder="Zip">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <select class="form-control" name="county">
+                      <option value="County" selected="selected">Country</option>
+                      <option value="Option1">Option1</option>
+                      <option value="Option2">Option2</option>
+                      <option value="Option3">Option3</option>
+                   
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="checkbox-parent">
+                    <label class="checkbox-wrapper">Home Street Address is the same
+                        <input id="same-home-street-address" name="check_3"  type="checkbox" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div id="different-home-street-address" class="hidden-special">    
+                <div class="separator">
+                  <h5>Home Street Address (if different)</h5>
+                </div>
+               
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input class="form-control" type="text" name="home-street-address-two" placeholder="Another Home Street Address">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input class="form-control" type="text" name="city2" placeholder="City">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input class="form-control" type="text" name="zip2" placeholder="Zip">
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-group">
+                        <input class="form-control" type="text" name="country" placeholder="Country">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="formular-controls">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <div class="form-group">
+                  <div class="previous-button">
+                    <button id="previous-button" type="button" class="btn btn-primary">Previous</button>  
+                  </div>
+                  <div class="next-button">
+                    <button id="finish-button" type="button" class="btn btn-primary">Finish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <!-- <fieldset id="third-fieldset" class="hidden-fieldset">
+          <div class="row">
+            <div class="container">
+              <div class="col-md-12 text-center">
+                <div class="image-success">
+                  <img src="/images/img.svg" alt="" width="250" height="250">
+                </div>
+
+                <div class="success-content"> 
+                  <h2 class="primary-text">success!</h2>
+                  <h4 class="secondary-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+
+                  <div class="red-button">
+                    <a href="#" class="download-button">download</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset> -->
+      </form>
+    </div>
+    </section>
+
+    <section class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="footer-copyright">
+              <p>COPYRIGHT @2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+    <!-- My JS -->
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/setup.js"></script>
+
+  </body>
+</html>
